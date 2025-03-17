@@ -134,7 +134,7 @@ const Login = ({navigation}) => {
           placeholder="Enter Name"
           value={name}
           onChangeText={setName}
-          placeholderTextColor="#ffffff"
+          placeholderTextColor="#3e3e3e"
         />
       </View>
 
