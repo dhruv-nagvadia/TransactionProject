@@ -199,12 +199,7 @@ const AddExpenses = ({route, navigation}) => {
           />
         )}
 
-        <LinearGradient
-          start={{x: 0.0, y: 0.2}}
-          end={{x: 0.9, y: 1}}
-          locations={[0.1, 0.4, 1]}
-          colors={['#1cd8f9', '#b85dff', '#ffa470']}
-          style={styles.gradientDropdown}>
+        <View style={styles.gradientDropdown}>
           <View style={styles.dropdownContainer}>
             <DropDownPicker
               open={open}
@@ -214,8 +209,8 @@ const AddExpenses = ({route, navigation}) => {
               setValue={setCategory}
               setItems={setItems}
               placeholder="CATEGORY"
-              placeholderStyle={{color:"#ffffff"}}
-              style={[styles.dropdown, {backgroundColor: 'transparent'}]} 
+              placeholderStyle={{color: '#b85dff'}}
+              style={[styles.dropdown, {backgroundColor: '#ffffff'}]}
               textStyle={styles.droptext}
               selectedItemLabelStyle={styles.stext}
               dropDownContainerStyle={{
@@ -229,10 +224,10 @@ const AddExpenses = ({route, navigation}) => {
                 animationType: 'fade',
                 transparent: true,
               }}
-              arrowIconStyle={{tintColor:"#ffffff"}}
+              arrowIconStyle={{tintColor: '#b85dff'}}
             />
           </View>
-        </LinearGradient>
+        </View>
       </View>
 
       <LinearGradient
@@ -261,7 +256,7 @@ const styles = StyleSheet.create({
     color: '#586363',
   },
   stext: {
-    color: '#000000',
+    color: '#b85dff',
   },
   title: {
     fontSize: 25,
@@ -286,7 +281,7 @@ const styles = StyleSheet.create({
   box3: {
     fontSize: 18,
     marginStart: 10,
-    marginTop:7
+    marginTop: 7,
   },
   box4: {
     height: 60,
